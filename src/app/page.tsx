@@ -6,6 +6,7 @@ import styles from "./page.module.css";
 import { Nunito } from "next/font/google";
 import Publications from "./components/publications";
 import BlogCard from "./components/blog_card";
+import ProjectCard from "./components/project_card";
 
 const nunito = Nunito({ weight: "400", subsets: ['latin'] });
 
@@ -77,9 +78,9 @@ export default function Home() {
         <h1>My Reading List</h1>
         <p style={{ color: "white", marginTop: '10px' }}>A blog about articles and literature I read.</p>
 
-        <button className={`${styles.show_more_button} ${nunito.className}`} style={{ marginTop: "-10px", color: "white", textDecoration: "underline", backgroundColor: "transparent", width: "180px", height: "50px", fontSize:"16px", position: "absolute", right: "10%"}}>
-            Show All
-          </button>
+        <button className={`${styles.show_more_button} ${nunito.className}`} style={{ marginTop: "-10px", color: "white", textDecoration: "underline", backgroundColor: "transparent", width: "180px", height: "50px", fontSize: "16px", position: "absolute", right: "10%" }}>
+          Show All
+        </button>
 
         <div className={styles.blog_card_holder}>
           <BlogCard title="Why should you use CNN?" image="/images/img.png" />
@@ -87,7 +88,7 @@ export default function Home() {
           <BlogCard title="Diffusion process for the sake of normalizing diffusion mechanism" image="/images/spec.jpg" />
         </div>
         <center>
-          
+
         </center>
         <br />
 
@@ -99,6 +100,19 @@ export default function Home() {
 
       {/* Noteable Projects */}
       <section className={styles.noteable_projects}>
+        <h1>Noteable Projects</h1>
+
+        <div style={{ width: "100%", minHeight: "350px", marginTop: "40px", display: "flex", flexWrap: "wrap" }}>
+
+          <ProjectCard title="Spotify" techs={["Java", "PostgreSQL"]} git_url="https://github.com/imrnh/spotify_java" description="In CSS, you typically don't directly get the width of a parent container and apply it to a child element. Instead, you set the width of the child element as a percentage or a specific value." />
+          <ProjectCard title="Spotify" techs={["Java", "PostgreSQL"]} git_url="https://github.com/imrnh/spotify_java" description="In CSS, you typically don't directly get the width of a parent container and apply it to a child element. Instead, you set the width of the child element as a percentage or a specific value." />
+          <ProjectCard title="Spotify" techs={["Java", "PostgreSQL"]} git_url="https://github.com/imrnh/spotify_java" description="In CSS, you typically don't directly get the width of a parent container and apply it to a child element. Instead, you set the width of the child element as a percentage or a specific value." />
+          <ProjectCard title="Spotify" techs={["Java", "PostgreSQL"]} git_url="https://github.com/imrnh/spotify_java" description="In CSS, you typically don't directly get the width of a parent container and apply it to a child element. Instead, you set the width of the child element as a percentage or a specific value." />
+          <ProjectCard title="Spotify" techs={["Java", "PostgreSQL"]} git_url="https://github.com/imrnh/spotify_java" description="In CSS, you typically don't directly get the width of a parent container and apply it to a child element. Instead, you set the width of the child element as a percentage or a specific value." />
+          <ProjectCard title="Spotify" techs={["Java", "PostgreSQL"]} git_url="https://github.com/imrnh/spotify_java" description="In CSS, you typically don't directly get the width of a parent container and apply it to a child element. Instead, you set the width of the child element as a percentage or a specific value." />
+
+
+        </div>
 
       </section>
 
