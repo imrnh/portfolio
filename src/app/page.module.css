@@ -1,10 +1,10 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 6rem;
-  min-height: 100vh;
+  min-height: 3000vh;
 }
 
 .description {
@@ -25,6 +25,21 @@
   gap: 0.5rem;
 }
 
+.menu_toggler{
+  position: absolute;
+  right: 15%;
+}
+
+.menu_ul{
+  position: absolute;
+  right: 15%;
+}
+
+.menu_toggler:hover{
+  transform:scale(1.04);
+  transition: 300ms;
+}
+
 .description p {
   position: relative;
   margin: 0;
@@ -39,11 +54,13 @@
   font-family: var(--font-mono);
 }
 
+
+
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
   max-width: 100%;
   width: var(--max-width);
+  font-size: 23px;
 }
 
 .card {
@@ -75,18 +92,29 @@
 
 .center {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: center;
   position: relative;
   padding: 4rem 0;
+  color: #636363;
+  width: 80%;
+  margin-top: 80px;
 }
+
+.myself{
+    width: 80%;
+    font-size: 22px;
+    color: #313131;
+}
+
 
 .center::before {
   background: var(--secondary-glow);
   border-radius: 50%;
-  width: 480px;
+  width: 380px;
   height: 360px;
-  margin-left: -400px;
+  margin-left: -500px;
 }
 
 .center::after {
@@ -108,6 +136,105 @@
 .logo {
   position: relative;
 }
+
+
+
+/* papers */
+
+.papers{
+  width: 100%;
+  height: auto;
+}
+
+
+.header_papers{
+  margin-left: 10%;
+  margin-top: 100px;
+}
+
+.header_papers h1{
+  font-size: 40px;
+}
+
+
+.papers_cards_view{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+
+.pub_abstract{
+  margin-top: 24px;
+  color: "#757373";
+}
+
+.buttons{
+  width: 500px;
+  height: 50px;
+  color: 'black';
+  align-items: center;
+  margin-top: 10px;
+}
+
+.buttons a{
+  text-decoration: underline;
+}
+.buttons a:hover{
+  transform: scale(1.1);
+  transition: 300ms;
+}
+
+.show_more_button{
+  width: 250px;
+  height: 55px;
+  font-size: 19px;
+  border-radius: 100px;
+  border: 0;
+  background-color: #2D4CEE;
+  color: white;
+  cursor: pointer;
+  margin-top: 80px;
+}
+
+.blog_section{
+  width: 100vw;
+  min-height: 450px;
+  margin-top: 150px;
+  display: block;
+  padding-top: 50px;
+  background-color: rgb(20, 19, 19);
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.blog_section h1{
+  color: white;
+  font-size: 40px;
+}
+
+.blog_card_holder{
+  width: 100%;
+  min-height: 300px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog_card{
+  width: 32%;
+  min-width: 300px;
+  border-radius: 10px; 
+  margin-top: 10px;
+  margin-right: 1.3%; 
+}
+
+.noteable_projects{
+  width: 80%;
+  min-height: 400px;
+  background-color: red;
+  margin-top: 100px;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
