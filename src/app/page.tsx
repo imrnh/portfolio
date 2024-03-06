@@ -55,7 +55,7 @@ export default function Home() {
       <section className={styles.papers}>
         <div className={styles.header_papers}>
           <h1>Publications</h1  > <br />
-          <p>All of my accepted papers and submissions in different journals and conferences. </p>
+          <p>All of my accepted papers and submissions in journals and conferences. </p>
         </div>
 
         <div className={styles.papers_cards_view}>
