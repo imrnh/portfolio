@@ -26,12 +26,14 @@ export default function Home() {
         <code style={{ fontSize: 30, fontWeight: 700, color: "#2D4CEE" }}>Imran Hossen</code>
         <div>
           <Image className={styles.menu_toggler} onClick={toggleMenu} alt="menu" src={"/icons/menu.png"} width={30} height={30} style={{ cursor: "pointer", display: 'block' }}></Image>
-          <ul id="menus" ref={menus_ref} className={styles.menu_ul}
-            style={{ width: 200, fontSize: 26, listStyle: "none", display: "none", zIndex: 200, position: "absolute", marginLeft: -170, marginTop: 20, }}>
-            <li>Publications</li>
-            <li>Blogs</li>
-            <li>Projects</li>
-            <li>Download CV</li>
+          <ul id="menus" ref={menus_ref} className={styles.menu_ul} style={{display: "none"}}>
+            <li style={{margin: "10px"}}>Publications</li>
+            <li  style={{margin: "10px"}}>Blogs</li>
+            <li  style={{margin: "10px"}}>Projects</li>
+            <li style={{margin: "10px"}}>Download CV</li>
+            <li style={{margin: "10px"}}>
+              <button style={{width: "190px", height: "45px", borderRadius: "10px", backgroundColor: "#2D4CEE", color: "white", fontSize: "26px", border: "0", marginTop: "15px"}}>Contact</button>
+            </li>
           </ul>
         </div>
       </div>
@@ -40,13 +42,13 @@ export default function Home() {
         <p style={{ fontSize: 60 }}>Researching</p>
         <p style={{ fontSize: 70, color: 'black', fontWeight: 600 }}>&nbsp;“genAI”&nbsp;</p>
         <p style={{ fontSize: 60 }}>and</p>
-        <p style={{ fontSize: 70, color: 'black', fontWeight: 600 }}>&nbsp;“brain”.&nbsp;</p>
+        <p style={{ fontSize: 70, color: 'black', fontWeight: 600 }}>&nbsp;“XAI”.&nbsp;</p>
         <p style={{ fontSize: 60 }}>Founded&nbsp;</p>
         <a href="https://echoscript.xyz"><p style={{ fontSize: 60, color: "#2D4CEE", fontWeight: 600 }}>@echoscript.</p></a>
       </div>
 
       <div className={styles.myself}>
-        Independent researcher in generative AI (video generation). CS undergraduate at KUET, BD, currently working with brain EEG for thesis. My work ethic is characterized by an unwavering commitment to excellence whenever I encounter a field that inspires me. This dedication is rooted in my fundamental principle of authenticity.
+        Independent researcher working with <b>Normalizing Flows</b>. CS undergraduate at KUET, BD, currently working with CNN visulization for thesis. My work ethic is characterized by an unwavering commitment to excellence whenever I encounter a field that inspires me. This dedication is rooted in my fundamental principle of authenticity.
       </div>
 
 
